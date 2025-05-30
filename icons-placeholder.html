@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Electrical Troubleshooter - Placeholder Icons</title>
+    <style>
+        .placeholder-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #0a4d70;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // This script will be used to replace missing SVG icons with placeholder icons
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryCards = document.querySelectorAll('.category-card');
+            
+            categoryCards.forEach(card => {
+                const img = card.querySelector('img');
+                const categoryId = card.getAttribute('data-category');
+                
+                // Create placeholder icon
+                const placeholderIcon = document.createElement('div');
+                placeholderIcon.className = 'placeholder-icon';
+                placeholderIcon.textContent = categoryId.charAt(0).toUpperCase();
+                
+                // Replace img with placeholder
+                img.parentNode.replaceChild(placeholderIcon, img);
+            });
+        });
+    </script>
+</body>
+</html>

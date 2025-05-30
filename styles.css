@@ -1,0 +1,297 @@
+/* Marine Electrical Troubleshooter Styles - MDME Branded */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0040FF; /* MDME Blue: 100%C 75%M 0%Y 0%K */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo-container img {
+    max-width: 250px;
+    height: auto;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    color: #0040FF; /* MDME Blue */
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    border-color: #0040FF; /* MDME Blue */
+    background-color: #f0f5ff; /* Very light MDME Blue for hover state */
+}
+
+.category-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    /* Removed filter that was causing pink coloration */
+}
+
+.category-card h3 {
+    margin: 0 0 10px;
+    color: #0040FF; /* MDME Blue */
+}
+
+.category-card p {
+    margin: 0;
+    color: #666;
+}
+
+.back-button {
+    background-color: #f5f8fa;
+    border: 1px solid #0040FF; /* MDME Blue */
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #0040FF; /* MDME Blue */
+}
+
+.back-button:hover {
+    background-color: #e1e8ed;
+}
+
+.issue-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.issue-item {
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.issue-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    border-color: #0040FF; /* MDME Blue */
+    background-color: #f0f5ff; /* Very light MDME Blue for hover state */
+}
+
+.issue-item h3 {
+    margin: 0 0 10px;
+    color: #0040FF; /* MDME Blue */
+}
+
+.issue-item p {
+    margin: 0;
+    color: #666;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0040FF; /* MDME Blue for questions */
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-button {
+    background-color: #0040FF; /* MDME Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.answer-button:hover {
+    background-color: #0033CC; /* Slightly darker MDME Blue */
+    transform: translateY(-2px);
+}
+
+.diagnosis-container {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.diagnosis-container h3 {
+    margin-top: 0;
+    color: #0040FF; /* MDME Blue */
+}
+
+.diagnosis-result {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.diagnosis-result.normal {
+    background-color: #e8f4f8;
+    border-left: 5px solid #0040FF; /* MDME Blue */
+}
+
+.diagnosis-result.warning {
+    background-color: #fff8e8;
+    border-left: 5px solid #f0ad4e;
+}
+
+.diagnosis-result.critical {
+    background-color: #ffebee;
+    border-left: 5px solid #d32f2f;
+}
+
+.diagnosis-result strong {
+    font-weight: bold;
+    color: #0040FF; /* MDME Blue */
+}
+
+.contact-md-marine {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #ffebee;
+    border: 2px solid #d32f2f;
+    border-radius: 5px;
+}
+
+.contact-md-marine strong {
+    color: #d32f2f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.restart-button, .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.restart-button {
+    background-color: #f5f8fa;
+    color: #0040FF; /* MDME Blue */
+    border: 1px solid #0040FF; /* MDME Blue */
+}
+
+.restart-button:hover {
+    background-color: #e1e8ed;
+    transform: translateY(-2px);
+}
+
+.save-button {
+    background-color: #0040FF; /* MDME Blue */
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #0033CC; /* Slightly darker MDME Blue */
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0040FF; /* MDME Blue */
+    color: white;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-grid, .issue-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}

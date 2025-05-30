@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Electrical Troubleshooter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="icons/MDMELogoWhite.svg" alt="MD Marine Electric Logo">
+            </div>
+            <h1>Marine Electrical Troubleshooter</h1>
+            <p>Diagnose common electrical issues on your vessel</p>
+        </header>
+
+        <div class="main-content">
+            <div id="category-selection" class="section">
+                <h2>Select Problem Category</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="power-distribution">
+                        <img src="icons/power-distribution.svg" alt="Power Distribution Icon">
+                        <h3>Power Distribution</h3>
+                        <p>Circuit breakers, fuses, power loss</p>
+                    </div>
+                    <div class="category-card" data-category="battery">
+                        <img src="icons/battery.svg" alt="Battery Icon">
+                        <h3>Battery Systems</h3>
+                        <p>Charging issues, battery problems</p>
+                    </div>
+                    <div class="category-card" data-category="navigation">
+                        <img src="icons/navigation.svg" alt="Navigation Icon">
+                        <h3>Navigation Equipment</h3>
+                        <p>Navigation lights, electronics</p>
+                    </div>
+                    <div class="category-card" data-category="lighting">
+                        <img src="icons/lighting.svg" alt="Lighting Icon">
+                        <h3>Lighting & Interior</h3>
+                        <p>Lights, outlets, interior electrical</p>
+                    </div>
+                    <div class="category-card" data-category="engine">
+                        <img src="icons/engine.svg" alt="Engine Icon">
+                        <h3>Engine & Propulsion</h3>
+                        <p>Starter, ignition, engine controls</p>
+                    </div>
+                    <div class="category-card" data-category="safety">
+                        <img src="icons/safety.svg" alt="Safety Icon">
+                        <h3>Safety Systems</h3>
+                        <p>Emergency lights, alarms, bilge pumps</p>
+                    </div>
+                    <div class="category-card" data-category="environmental">
+                        <img src="icons/environmental.svg" alt="Environmental Icon">
+                        <h3>Environmental Systems</h3>
+                        <p>HVAC, refrigeration, water systems</p>
+                    </div>
+                    <div class="category-card" data-category="corrosion">
+                        <img src="icons/corrosion.svg" alt="Corrosion Icon">
+                        <h3>Corrosion & Damage</h3>
+                        <p>Galvanic corrosion, wire damage</p>
+                    </div>
+                    <div class="category-card" data-category="grounding">
+                        <img src="icons/grounding.svg" alt="Grounding Icon">
+                        <h3>Grounding & Bonding</h3>
+                        <p>Stray current, electric shock</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="issue-selection" class="section hidden">
+                <button class="back-button" data-target="category-selection">← Back to Categories</button>
+                <h2 id="issue-category-title">Select Specific Issue</h2>
+                <div id="issue-list" class="issue-list">
+                    <!-- Issues will be populated dynamically -->
+                </div>
+            </div>
+
+            <div id="troubleshooter" class="section hidden">
+                <button class="back-button" data-target="issue-selection">← Back to Issues</button>
+                <h2 id="current-issue-title">Troubleshooting</h2>
+                
+                <div id="question-container" class="question-container">
+                    <p id="current-question" class="question">Question appears here</p>
+                    <div id="answers" class="answers">
+                        <!-- Answers will be populated dynamically -->
+                    </div>
+                </div>
+                
+                <div id="diagnosis-container" class="diagnosis-container hidden">
+                    <h3>Diagnosis</h3>
+                    <div id="diagnosis-result" class="diagnosis-result">
+                        <!-- Diagnosis will appear here -->
+                    </div>
+                    <div class="action-buttons">
+                        <button id="restart-button" class="restart-button">Start New Diagnosis</button>
+                        <button id="save-button" class="save-button">Save Diagnosis</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="logo-container">
+                <img src="icons/MDMELogoWhite.svg" alt="MD Marine Electric Logo" style="max-width: 150px;">
+            </div>
+            <p>Marine Electrical Troubleshooter App | MD Marine Electric</p>
+            <p>For educational purposes only. Always consult a qualified marine electrician for serious electrical issues.</p>
+            <p>Contact: 253-383-9983 | MainOffice@MDmarineElectric.com</p>
+        </footer>
+    </div>
+
+    <script src="troubleshooter-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
